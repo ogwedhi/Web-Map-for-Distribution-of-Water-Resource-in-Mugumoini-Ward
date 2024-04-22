@@ -1,0 +1,175 @@
+#map {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+}
+
+.mousePosition {
+    position: fixed;    
+    top: auto;
+    right: auto;
+    bottom: 5px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.myButton {
+    background-color: indigo;
+    color: white;
+    font-weight: 700;
+    text-align: center;
+    height: 25px;
+    width: 75px;
+    border-radius: 2px;
+    border: none;
+    align-items: center;
+}
+
+.myButton.hover {
+    background-color: indigo;
+}
+
+.myButton.clicked {
+    background-color: chartreuse;
+}
+
+.myButton.clicked:hover {
+    background-color: chartreuse;
+}
+
+.homeButtonDiv {
+    position: relative;
+    display: block;
+    margin: 20px auto auto 20px;
+}
+
+.myButtonDiv {
+    position: relative;
+    display: block;
+    margin: 1px auto auto 10px;
+}
+
+.attQueryDiv {
+    position: absolute;
+    display: none;
+    margin: 70px auto auto 45px;
+    width: 250px;
+    background-color: rgba(255, 255, 255, 0.9);
+    font-family: inherit;
+    font-size: 1em;
+    line-height: 1.45;
+    border: 1px solid #d1d1d1;
+    border-radius: 2px;
+    box-shadow: 0px 0px 15px rgba(252, 213, 213, 0.5);
+    padding: 10px;
+}
+
+#selectLayer,
+#selectAttribute,
+#selectOperator,
+#enterValue {
+    width: calc(100% - 20px);
+    margin: 5px 0;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    font-size: 14px;
+}
+
+#attQryRun {
+    display: block;
+    width: calc(100% - 20px);
+    margin: 10px 0;
+    padding: 5px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+#attListDiv {
+    display: none;
+    margin-top: 10px;
+}
+
+.attTable {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.attTable th, .attTable td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+.attTable th {
+    background-color: #f2f2f2;
+}
+
+.attTable tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.attTable tr:hover {
+    background-color: #ddd;
+}
+
+.attTable td {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.attListDiv {
+    max-height: 300px;
+    overflow-y: auto;
+}
+
+.attListDiv {
+    position: absolute;
+    display: none;
+    margin: 350px auto auto 350px;
+    /* padding: 10px; */
+    width: auto;
+    max-width: 750px;
+    /*height: auto; */
+    /* max - height: 250px; */
+    height: 250px;
+    background-color: rgba(255, 255, 255, 0.9);
+    font-family: inherit;
+    font-size: 1em;
+    line-height: 1.45;
+    border-radius: 2px;
+    border: 1px solid #d1d1d1;
+    box-shadow: 2px 3px 2px rgba(0,0,0,0.5);
+    /* z-index; */
+    overflow: scroll;
+}
+
+#attQryTable {
+    padding: 0;
+    border-collapse: collapse;
+}
+
+#attQrytable, td, th {
+    padding: 0px 5px 0px 5px;
+    border: 1px black;
+}
+
+#attQryTable th {
+    color: white;
+    background-color: midnightblue;
+    position: sticky;
+    top: 0;
+    font-style: normal;
+    padding: 5px 10px 5px 10 px;
+}
+
+#attQryTable tr:hover
+/* {font-weight: bolder; background-color: rgb(225, 225, 225);} */
+{background-color: lightgrey;}
